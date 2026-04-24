@@ -2,17 +2,19 @@
 **Disciplina:** Programação e Desenvolvimento de Software II (PDS2) - 2026.1  
 **Tema:** Sistema centralizado de apoio à mobilidade acadêmica para alunos oferecerem e solicitarem caronas.  
 **Autores:** Arthur Canhestro Lara Saraiva, Saulo Freitas, Livia Torres, joao Andrade, Luiz Miguel Reis
-  
-## Escopo   
+
+## O Problema
+O deslocamento de estudantes universitários é um desafio que se divide em duas frentes principais: o trajeto diário para o campus da UFMG, marcado por transporte público lotado e altos custos, e as frequentes viagens intermunicipais de estudantes de fora que retornam às suas cidades natais aos finais de semana e feriados, enfrentando passagens de ônibus caras e horários inflexíveis. O projeto visa resolver esse problema criando uma plataforma que conectará Motoristas e Passageiros, permitindo a oferta e a busca de rotas de forma estruturada.
+
+## Escopo do projeto
 Este é um sistema que centraliza a oferta e demanda de caronas por parte de alunos da Universidade Federal de Minas Gerais para atender as necessidades mobilizacionais para localidades diversas. As funcionalidades iniciais vão além de uma simples listagem de vagas e otimizam a distribuição e divulgação dos lugares em veículos de motoristas cadastrados, que podem aceitar ou não solicitações de usuários passageiros. Caso o veículo esteja sem espaço, uma fila pode ser organizada para se preencher possíveis desistências após o aval dos envolvidos na operação.
-...
+
 
 Outros recursos serão adicionados a medida que se mostrem necessários para a melhor experiência dos usuários.
-*
 
-#  Funcionalidades 
+##  Funcionalidades 
 
-## 1 Cadastro e Autenticação
+### 1 Cadastro e Autenticação
 O sistema deve permitir o gerenciamento de acesso dos usuários.
 
 - Cadastro de usuários (motoristas e passageiros)
@@ -21,7 +23,7 @@ O sistema deve permitir o gerenciamento de acesso dos usuários.
 
 ---
 
-## 2 Oferta de Caronas
+### 2 Oferta de Caronas
 O sistema deve permitir que motoristas ofereçam caronas.
 
 - Cadastro de nova carona com as seguintes informações:
@@ -35,7 +37,7 @@ O sistema deve permitir que motoristas ofereçam caronas.
 
 ---
 
-## 3 Solicitação de Caronas
+### 3 Solicitação de Caronas
 O sistema deve permitir que passageiros encontrem e solicitem caronas.
 
 - Busca por caronas disponíveis
@@ -47,7 +49,7 @@ O sistema deve permitir que passageiros encontrem e solicitem caronas.
 
 ---
 
-## 4 Gerenciamento de Solicitações
+### 4 Gerenciamento de Solicitações
 O sistema deve permitir que motoristas gerenciem solicitações recebidas.
 
 - Aceitar solicitações de passageiros
@@ -56,7 +58,7 @@ O sistema deve permitir que motoristas gerenciem solicitações recebidas.
 
 ---
 
-## 5 Sistema de Fila 
+### 5 Sistema de Fila 
 O sistema deve gerenciar situações em que não há vagas disponíveis.
 
 - Entrada automática ou manual em fila de espera quando a carona estiver lotada
@@ -66,14 +68,14 @@ O sistema deve gerenciar situações em que não há vagas disponíveis.
 
 ---
 
-## 6 Notificações
+### 6 Notificações
 O sistema deve manter os usuários informados sobre eventos relevantes.
 
 - Notificação de solicitação aceita ou recusada
 - Notificação de liberação de vaga na fila
 - Notificação de cancelamento de carona
 
-## 7 Avaliações
+### 7 Avaliações
 
 O sistema deve permitir que os usuários avaliem as caronas e relatem comportamentos inadequados.
 
