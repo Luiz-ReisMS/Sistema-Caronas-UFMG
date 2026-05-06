@@ -1,0 +1,4 @@
+# Ignorar executáveis e arquivos de compilação
+build/
+*.o
+*.exe
