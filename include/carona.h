@@ -19,6 +19,9 @@ essas informações de forma controlada.
 
 class Carona {
 private:
+    //Identificador da carona
+    int id;
+
     // Local de saída da carona
     std::string origem;
 
@@ -39,30 +42,35 @@ public:
     Responsável por inicializar os atributos da carona
     no momento em que ela é criada.
     */
-    Carona(std::string origem,
-           std::string destino,
-           std::string horario,
-           int vagas);
+    Carona(int id,
+            std::string origem,
+            std::string destino,
+            std::string horario,
+            int vagas);
+    /*
+    Retorna o id da carona.
+    */
+    int getId() const;
 
     /*
     Retorna a origem da carona.
     */
-    std::string getOrigem();
+    std::string getOrigem() const;
 
     /*
     Retorna o destino da carona.
     */
-    std::string getDestino();
+    std::string getDestino() const;
 
     /*
     Retorna o horário da carona.
     */
-    std::string getHorario();
+    std::string getHorario() const;
 
     /*
     Retorna a quantidade atual de vagas disponíveis.
     */
-    int getVagasDisponiveis();
+    int getVagasDisponiveis() const;
 
     /*
     Reduz em 1 o número de vagas disponíveis.
@@ -87,7 +95,7 @@ public:
     - true -> se houver vagas
     - false -> se a carona estiver lotada
     */
-    bool possuiVagas();
+    bool possuiVagas() const;
 };
 
 #endif

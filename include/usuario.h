@@ -1,10 +1,11 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#ifndef Usuario_H
+#define Usuario_H
 #include <iostream>
 #include <string>
 
-class usuario{
+class Usuario{
     protected:
+    int id;
     std::string nome;
     std::string email;
     std::string senha;
@@ -18,7 +19,8 @@ class usuario{
 
     public:
     //Construtor que inicializa com variaveis adquiridas em cadastro() ou login()
-    usuario(const std::string &nome, const std::string &email, const std::string &senha);
+    Usuario(int id, const std::string &nome, const std::string &email, const std::string &senha);
+    int getId() const;
 
     //Lê um nome e senha e registra pela primeira vez
     void virtual cadastro();
@@ -31,22 +33,22 @@ class usuario{
 
     virtual void salvarCSV();
     virtual void carregarCSV();
-    virtual ~usuario();
+    virtual ~Usuario();
 };
 
-class passageiro : public usuario{
+class Passageiro : public Usuario{
     //outras classes poderão precisar carregar ou alterar esse CSV
     public:
-    passageiro(const std::string &nome, const std::string &email, const std::string &senha);
+    Passageiro(int id, const std::string &nome, const std::string &email, const std::string &senha);
     //Salva usuário cadastrado em CSV próprio de passageiro
     void salvarCSV() override;
     //Carrega CSV próprio de passageiro
     void carregarCSV() override;
 };
 
-class motorista : public usuario{
+class Motorista : public Usuario{
     public:
-    motorista(const std::string &nome, const std::string &email, const std::string &senha);
+    Motorista(int id, const std::string &nome, const std::string &email, const std::string &senha);
     //Salva usuário cadastrado em CSV próprio de motorista
     void salvarCSV() override;
     //Carrega CSV próprio de motorista
