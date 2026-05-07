@@ -47,11 +47,11 @@ Este documento descreve os requisitos funcionais e não funcionais do sistema de
 
 | Responsabilidades | Colaboradores |
 |---|---|
-| Gerenciar usuários do sistema | usuario |
+| Gerenciar usuários do sistema | Usuario |
 | Gerenciar caronas | Carona |
 | Gerenciar filas de espera | Fila |
 | Registrar solicitações | Solicitacao |
-| Realizar login de usuários | usuario |
+| Realizar login de usuários | Usuario |
 | Aprovar passageiros da fila | Fila, Carona, Solicitacao |
 
 ---
