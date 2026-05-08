@@ -11,21 +11,21 @@
 
 /**
  * @class Sistema
- * @brief Classe principal que gerencia a lógica de funcionamento do sistema de caronas.
+ * @brief Classe que gerencia a lógica de funcionamento do sistema de caronas.
  * * Armazena as listas de usuários, caronas, filas e solicitações, e controla as interações
  * (ex: um usuário solicitando uma carona entra na fila de espera daquela carona).
  */
 class Sistema {
 private:
     /** * @brief Lista de ponteiros para usuários. 
-     * Armazena tanto passageiros quanto motoristas (polimorfismo com os ponteiros).
+     * Armazena tanto passageiros quanto motoristas (polimofismo com os ponteiros).
      */
     std::vector<usuario*> usuarios_;       
 
     /** @brief Lista de caronas cadastradas (e ativas) no sistema. */
     std::vector<Carona> caronas_;          
 
-    /** @brief Lista de filas de espera, cada uma associada a uma carona. */
+    /** @brief Lista de filas de espera, cada uma asociada a uma carona. */
     std::vector<Fila> filas_;              
 
     /** @brief Lista do histórico de solicitações feitas. */
@@ -39,7 +39,7 @@ public:
 
     /**
      * @brief Destrutor da classe Sistema.
-     * Libera a memória alocada dinamicamente para os ponteiros de usuários.
+     * Libera a memória alocada para os ponteiros de usuários.
      */
     ~Sistema();
 
